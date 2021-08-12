@@ -8,7 +8,7 @@
 <body>
   <?php
        echo $_POST['name']."<br>";
-       echo $_POST['']."<br>";
+       echo $_POST['roll']."<br>";
   ?>
 </body>
   </html>
