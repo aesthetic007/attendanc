@@ -1,17 +1,77 @@
 <!DOCTYPE html>
-<html Lang="en">
+<html>
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width,initial-scale=1.0">
- <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>attendance</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<a href="test.php">home</a>
+<center>
+<table border="4">
+<thead>
+<tr>
+<th>Roll no</th>
+<td><input type="text" name="rno" id="rno"></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>Name</th>
+<td><input type="text" name="name" id="name"></td>
+</tr>
+<tr>
+<th>Subject</th>
+<td><select name="subjects" id="sub">
+<option value="Data Structure">Data Structure</option>
+<option value="Python">Python</option>
+<option value="TOC">TOC</option>
+<option value="Sensors">Sensors</option><option value="data structure">data structure</option>
+<option value="Transducer">Transducer</option>
+</select>
+</td>
+</tr>
+<tr id="btna">
+<td colspan="2"><input type="button" name="button" id="btn" value="Add" onclick="AddRow()"></td>
+</tr>
+</tbody>
+</table>
+<table border="4" id="show">
+<thead>
+<tr>
+<th>Roll no</th>
+<th>Name</th>
+<th>Subject</th>
+</tr>
+</thead>
+</table>
+</center>
+<script>
+var list1 = [];
+var list2 = [];
+var list3 = [];
+ 
+var n = 1;
+var x = 0;
+
+function AddRow(){
+var AddRown = document.getElementByID('show');
+var NewRow = AddRown.insertRow(n);
+
+list1[x] = document.getElementByID("rno").value;
+list1[x] = document.getElementByID("name").value;
+list1[x] = document.getElementByID("Sub").value;
+
+var cel1 = NewRow.insertCell(0);
+var cel2 = NewRow.insertCell(1);
+var cel3 = NewRow.insertCell(2);
+
+
+cel1.innerHTML =list1[x];
+cel2.innerHTML =list2[x];
+cel3.innerHTML =list3[x];
+
+n++;
+x++;
+}
+</script>
 </body>
 </html>
-
-
-
-
