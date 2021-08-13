@@ -1,4 +1,7 @@
-
+html {    
+    background: url('2.jpeg') no-repeat center fixed;     
+    background-size: cover;
+}
 table{
     margin-top:50px;
     text-align:center;
