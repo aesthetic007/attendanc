@@ -30,7 +30,7 @@
 </td>
 </tr>
 <tr id="btna">
-<td colspan="2"><input type="button" name="button" id="btn" value="Add" onclick="AddRow(show)"></td>
+<td colspan="2"><input type="button" name="button" id="btn" value="Add" onclick="AddRow()"></td>
 </tr>
 </tbody>
 </table>
@@ -52,13 +52,13 @@ var list3 = [];
 var n = 1;
 var x = 0;
 
-function AddRow(show){
-var AddRown = document.getElementByID('show');
+function AddRow(){
+var AddRown = document.getElementById("show");
 var NewRow = AddRown.insertRow(n);
 
-list1[x] = document.getElementByID("rno").value;
-list1[x] = document.getElementByID("name").value;
-list1[x] = document.getElementByID("Sub").value;
+list1[x] = document.getElementById("rno").value;
+list1[x] = document.getElementById("name").value;
+list1[x] = document.getElementById("Sub").value;
 
 var cel1 = NewRow.insertCell(0);
 var cel2 = NewRow.insertCell(1);
