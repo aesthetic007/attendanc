@@ -1,6 +1,7 @@
 html {    
     background: url("2.jpeg") no-repeat center fixed;     
     background-size: cover;
+    background-blend-mode:darken;
 }
 table{
     margin-bottom:100px;
