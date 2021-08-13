@@ -3,12 +3,13 @@ html {
     background-size: cover;
 }
 table{
-    margin-top:100px;
+    margin-bottom:100px;
     text-align:center;
     background:#333;
     color:#fff;
 }
 #show th, #show td{
+     margin-bottom:100px;
      padding:13px;
 }
 #btna td input{
