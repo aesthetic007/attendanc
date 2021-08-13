@@ -30,7 +30,7 @@
 </td>
 </tr>
 <tr id="btna">
-<td colspan="2"><input type="button" name="button" id="btn" value="Add" onclick="AddRow("show")"></td>
+<td colspan="2"><input type="button" name="button" id="btn" value="Add" onclick="AddRow()"></td>
 </tr>
 </tbody>
 </table>
@@ -52,7 +52,7 @@ var list3 = [];
 var n = 1;
 var x = 0;
 
-function AddRow("show"){
+function AddRow(){
 var AddRown = document.getElementById("show");
 var NewRow = AddRown.insertRow(n);
 
