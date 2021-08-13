@@ -9,4 +9,8 @@ table{
 }
 #btna td input{
     width:100%;
+{
+background:rgba(0,0,0,0,7)url(2.jpeg);
+background-size:cover;
+background-blend-mode:darken;
 }
