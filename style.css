@@ -43,8 +43,18 @@ tr:hover{
     box-shadow:2px 2px 12px rgba(0,0,0,0,2), -1px -1px 8px rgba(0,0,0,0,2);
 }
 #show th, #show td{
-     margin-bottom:100px;
-     padding:13px;
+    position:absolute;
+    right:50%;
+    bottom:50%;
+     text-align:center;
+    background:#fff;
+    transform:translate(-50%,-50%);
+    border-collapse:collapsed;
+    width:800px;
+    height:200px;
+    border:1px solid #bdc3c7;
+    box-shadow:2px 2px 12px rgba(0,0,0,0,2), -1px -1px 8px rgba(0,0,0,0,2);
+}
 }
 #btna td input{
     width:100%;
