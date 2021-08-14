@@ -6,8 +6,9 @@ html {
 table{
     margin-top:50px;
     text-align:center;
-    background:#333;
-    color:#fff;
+    background-color:#16a085; 
+    color:#fff; 
+    padding:10px 0px; 
 }
 #show th, #show td{
      margin-bottom:100px;
