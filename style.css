@@ -9,14 +9,8 @@ body{
     font-family:Verdana,Geneva,Tahoma,sans-serif;
    }
 table{
-    
-    margin-top:100px;
-    
+    margin-top:50px;
     text-align:center;
-   
-   
-
-     text-align:center;
     background:#fff;
     transform:translate(-50%,-50%);
     border-collapse:collapsed;
