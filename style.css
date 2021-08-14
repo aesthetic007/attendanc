@@ -9,9 +9,9 @@ body{
     font-family:Verdana,Geneva,Tahoma,sans-serif;
    }
 table{
-    position:
+    position:absolute;
     left:50%;
-    top:50%;
+    top:30%;
      text-align:center;
     background:#fff;
     transform:translate(-50%,-50%);
