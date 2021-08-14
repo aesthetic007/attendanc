@@ -7,14 +7,14 @@ table{
     margin-top:30px;
     text-align:center;
     background-image: linear-gradient(to right, #eea2a2 10%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
-    color:#fff;
+    color:grey;
     width:800px; 
     height:200px; 
-    border:1px solid #bdc3c716l;
+    border:2px solid #fff;bdc3c716l
 }
 h1{ 
     position:center;
-    font-weight:600; 
+    font-weight:600%; 
     text-align:center; 
     background-color:transparent; 
     color:#fff; 
