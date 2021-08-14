@@ -24,11 +24,12 @@
 <th>Subject</th>
 <td><select name="subjects" id="sub">
 <option value="Data Structure">Data Structure(JL)</option>
+<option value="Data Structure">Data Structure(SN)</option>
 <option value="Python">Python</option>
 <option value="TOC">TOC</option>
-<option value="Sensors">Sensors</option>
- <option value="data structure">Data Structure(SN)</option>
-<option value="Transducer">Transducer</option>
+<option value="Sensors&Transducer">Sensors&Transducer</option>
+<option value="Maths">Maths(SH)</option>
+<option value="Maths">Maths(AB)</option>
 </select>
 </td>
 </tr>
@@ -48,7 +49,9 @@
 </table>
 </center>
 <script>
- function displayDate();
+ function displayDate(){
+  document.getElementById("show").innerHTML=Date();
+  }
 function AddRow() {
   var AddRown = document.getElementById("show");
 
