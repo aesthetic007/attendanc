@@ -48,6 +48,7 @@
 <th>Roll no</th>
 <th>Name</th>
 <th>Subject</th>
+ <th>Date&Timet</th>
 </tr>
 </thead>
 </table>
@@ -64,13 +65,18 @@ function AddRow() {
   var a = document.getElementById("rno").value;
   var b = document.getElementById("name").value;
   var c = document.getElementById("sub").value;
+  var d = document.getElementById("showdate").value;
   
-  var cel1 = NewRow.insertCell(0);
+ var cel1 = NewRow.insertCell(0);
   var cel2 = NewRow.insertCell(1);
   var cel3=NewRow.insertCell(2)
+  var cel4=NewRow.insertCell(3)
+ 
   cel1.innerHTML = a;
   cel2.innerHTML= b;
   cel3.innerHTML= c;
+ cel4.innerHTML= d;
+ 
 }
 </script>
 </body>
