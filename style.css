@@ -5,15 +5,14 @@ html {
 }
 table{
     margin-top:50px;
-    position:center;
+    position:right;
     text-align:center; 
     background:#fff; 
     transform:translate(-50%,-50%); 
     border-collapse:collapsed; 
     width:800px; 
     height:200px; 
-    border:2px solid #bdc3c7; 
-    box-shadow:2px 2px 12px rgba(0,0,0,0,2), -1px -1px 8px rgba(0,0,0,0,2);
+    border:1px solid #bdc3c716l;
 }
 #show th, #show td{
      margin-bottom:100px;
