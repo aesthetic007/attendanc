@@ -44,8 +44,8 @@ tr:hover{
 }
 #show th, #show td{
     position:absolute;
-    right:5%;
-    bottom:5%;
+    left:50%;
+    bottom:20%;
      text-align:center;
     background:#fff;
    
