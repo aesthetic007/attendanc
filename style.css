@@ -10,6 +10,8 @@ body{
    }
 table{
     margin-top:50px;
+    left:50%;
+    top:50%;
     text-align:center;
     background:#fff;
     transform:translate(-50%,-50%);
