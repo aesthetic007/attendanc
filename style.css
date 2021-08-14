@@ -42,6 +42,10 @@ tr:hover{
     transform:scale(1.02);
     box-shadow:2px 2px 12px rgba(0,0,0,0,2), -1px -1px 8px rgba(0,0,0,0,2);
 }
+table show{
+    left:30%;
+    bottom:20%
+}
 #show th, #show td{
     left:50%;
     bottom:20%;
