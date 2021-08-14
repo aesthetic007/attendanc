@@ -5,11 +5,7 @@ html {
 }
 table{
     margin-top:50px;
-    text-align:center;
-    margin-top:50px; 
-    position:center; 
-    align-left:50%; 
-    align-top:50%; 
+    position:center;
     text-align:center; 
     background:#fff; 
     transform:translate(-50%,-50%); 
