@@ -25,19 +25,22 @@ html {
     color:white;
     font-size:60px;
     font-weight:700;
-    letter-spacing:1px;
+    letter-spacing:2px;
     margin-bottom:20px;
     background:transparent;
     position:relative;
     animation:text 3s 1;
 }
 .text2{
-    font-size:50px;
+    font-size:60px;
     color:white;
+    font-weight:700;
+    letter-spacing:2px;
+    animation:text 3s 1;
 }
 @keyframes text{
 0%{
-    color:black;
+    color:transparent;
     margin-bottom:-40px;
     }
     30%{
@@ -51,7 +54,7 @@ html {
     }
 table{
     position:absolute; 
-    top:30%; 
+    top:20%; 
     left:50%; 
     transform:translate(-50%,-50%); 
     border-collapse:collapse; 
