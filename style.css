@@ -1,3 +1,9 @@
+*{
+    padding:0;
+    margin:0;
+    font-family:sans-serif;
+}
+
 html {    
     background: url("2.jpeg") no-repeat center fixed;     
     background-size: cover;
@@ -44,14 +50,15 @@ html {
     }
     }
 table{
-    margin-top:30px;
-    text-align:center;
-    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
-    backgroulinear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
-    color:black;
+    position:absolute; 
+    top:50%; 
+    left:50%; 
+    transform:translate(-70%,-30%); 
+    border-collapse:collapse; 
     width:800px; 
     height:200px; 
-    border:5px solid #fff;bdc3c716l
+    border:1px solid #bdc3c7; 
+    box-shadow:2px 2px 12px rgba(0,0,0,0,2), -1px -1px 8px rgba(0,0,0,0,2);
 }
 
 #show th, #show td{
