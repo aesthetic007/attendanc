@@ -65,9 +65,11 @@ window.alert(" ഇങ്ങക്ക് അറ്റന്റെൻസ് ഇട
 </center>
  </div>
 <script>
+ <div class="date">
  function displayDate(){
   document.getElementById("showdate").innerHTML=Date();
   }
+ </div>
 function AddRow() {
   var AddRown = document.getElementById("show");
 
@@ -76,7 +78,7 @@ function AddRow() {
   var a = document.getElementById("rno").value;
   var b = document.getElementById("name").value;
   var c = document.getElementById("sub").value;
-  var d = document.getElementById("showdate").value;
+  var d = document.getElementById("date").value;
   
  var cel1 = NewRow.insertCell(0);
   var cel2 = NewRow.insertCell(1);
