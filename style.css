@@ -51,9 +51,9 @@ html {
     }
 table{
     position:absolute; 
-    top:50%; 
+    top:30%; 
     left:50%; 
-    transform:translate(-70%,-30%); 
+    transform:translate(-30%,-70%); 
     border-collapse:collapse; 
     width:800px; 
     height:200px; 
