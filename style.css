@@ -20,7 +20,7 @@ html {
     display:block;
 }
 .text1{
-    top:10%;
+    top:30%;
     left:10%;
     color:white;
     font-size:60px;
@@ -32,7 +32,7 @@ html {
     animation:text 3s 1;
 }
 .text2{
-    top:20%;
+    top:40%;
     left:20%;
     font-size:60px;
     color:white;
@@ -62,29 +62,33 @@ table{
     border-collapse:collapse; 
     width:800px; 
     height:200px; 
+    background:white;
     border:1px solid #bdc3c7; 
     box-shadow:2px 2px 12px rgba(0,0,0,0,2), -1px -1px 8px rgba(0,0,0,0,2);
 }
 .tab{
     
     position:absolute; 
-    top:70%; 
+    top:60%; 
     left:50%; 
     transform:translate(-50%,-50%); 
     border-collapse:collapse; 
     width:800px; 
     height:200px; 
+    background:white;
     border:1px solid #bdc3c7; 
     box-shadow:2px 2px 12px rgba(0,0,0,0,2), -1px -1px 8px rgba(0,0,0,0,2);
 }
 tr{ 
     transition:all .2s ease-in; 
     cursor:pointer;
+    background:yellow;
 }
 th,td{ 
     padding:12px; 
     text-align:center; 
     border-bottom:1Px solid #ddd; 
+    background:red;
 }
 tr:hover{ 
     background-color:#f5f5f5; 
