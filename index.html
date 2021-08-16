@@ -66,10 +66,12 @@ window.alert(" ഇങ്ങക്ക് അറ്റന്റെൻസ് ഇട
  </div>
 <script>
  function displayDate(){
+  var displayDate=document.getElementById("show");
+  var NewRow=displayDate.insertRow();
   document.getElementById("showdate").innerHTML=Date();
   }
   
-  var NewRow=display.insertRow();
+  
   
 function AddRow() {
   var AddRown = document.getElementById("show");
@@ -92,7 +94,7 @@ function AddRow() {
   cel3.innerHTML=c;
   cel4.innerHTML=d;
 }
- }
+ 
 </script>
 </body>
 </html>
