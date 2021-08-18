@@ -1,100 +1,77 @@
-
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8" />
-
-<title>attendance</title>
-<link rel="stylesheet" href="style.css">
-</head>
- <script>
-window.alert(" ഇങ്ങക്ക് അറ്റന്റെൻസ് ഇടണോ ...😏 ");
-</script>
-<body background=".jpeg" >
- <div class="container">
-  <span class="text1">ഇങ്ങക്ക് അറ്റന്റെൻസ്</span>
-   <span class="text2">വാണെങ്കി ഇട്ടോളീ...🤭 </span>            
- </div> 
- <br><br><br><br><br><br><br><br>
+    <head>
+        <meta charset="UTF-8"/> 
+        <title>attendance</title>
+        <link rel="stylesheet" href="style.css">
+    </head> 
+    <script>window.alert("ab");</script>
+    <body>
+        <form method="post" action="">
+        <div class="container">
+            <span class="text1">ab</span>
+            <span class="text2">ac</span></span> 
+        </div>
 <center>
-<table border="5">
-<thead>
-<tr>
-<th>Roll no</th>
-<td><input type="text" name="rno" id="rno"></td>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th>Name</th>
-<td><input type="text" name="name" id="name"></td>
-</tr>
-<tr>
-<th>Subject</th>
-<td><select name="subjects" id="sub">
-<option value="Data Structure">Data Structure(JL)</option>
-<option value="Data Structure">Data Structure(SN)</option>
-<option value="Python">Python</option>
-<option value="TOC">TOC</option>
-<option value="Sensors&Transducer">Sensors&Transducer</option>
-<option value="Maths">Maths(SH)</option>
-<option value="Maths">Maths(AB)</option>
-</select>
-</td>
-</tr>
- <tr>
-<th>Date&Time</th>
-<td><button type="button" onclick="displayDate()" id="showdate">ShowDate</button></td>
-</tr>
- <tr id="btna">
-<td colspan="2"><input type="button" name="button" id="btn" value="Add" onclick="AddRow()"></td>
-</tr>
-</tbody>
+    <table border="5">
+        <thead>
+            <tr>
+                <th>Rollno</th>
+                <td><input type="text" name="rno" id="rno"></td>
+            </tr>
+        </thead>
+    <tbody>
+        <tr>
+            <th>Name</th>
+            <td><input type="text" name="name" id="name"></td>
+        </tr>
+        <tr>
+            <th>Subject</th>
+            <td>
+                <select name="subjects" id="sub">
+                    <option value="DataStructure">Data Structure(JL)</option>
+                    <option value="Data Structure">Data Structure(SN)</option>
+                    <option value="Python">Python</option>
+                    <option value="TOC">TOC</option>
+                    <option value="Sensors&Transducer">Sensors&Transducer</option>
+                    <option value="Maths">Maths(SH)</option>
+                    <option value="Maths">Maths(AB)</option>
+                </select>
+            </td>
+        </tr> 
+        <tr>
+            <th>Date&Time</th>
+            <td><button type="button" onclick="displayDate()"id="showdate">ShowDate</button></td>
+        </tr> 
+        <tr id="btna">
+            <td colspan="2">
+                <input type="submit" name="btn" id="btn" value="Submit"">
+            </td>
+        </tr>
+    </tbody>
 </table>
- <div class="table">
-<table border="4" class="tab" id="show">
-<thead>
-<tr>
-<th>Roll no</th>
-<th>Name</th>
-<th>Subject</th>
- <th>Date&Time</th>
-</tr>
-</thead>
-</table>
-</center>
- </div>
-<script>
- function displayDate(){
-  var displayDate=document.getElementById("show");
-  var NewRow=displayDate.insertRow();
-  document.getElementById("showdate").innerHTML=Date();
-  }
-  
-  
-  
-function AddRow() {
-  var AddRown = document.getElementById("show");
-
-  var NewRow = AddRown.insertRow();
-
-  var a = document.getElementById("rno").value;
-  var b = document.getElementById("name").value;
-  var c = document.getElementById("sub").value;
-  var d = document.getElementById("showdate").value;
-  
-  
-  var cel1=NewRow.insertCell(0);
-  var cel2=NewRow.insertCell(1);
-  var cel3=NewRow.insertCell(2);
-  var cel4=NewRow.insertCell(3);
- 
-  cel1.innerHTML=a;
-  cel2.innerHTML=b;
-  cel3.innerHTML=c;
-  cel4.innerHTML=d;
-}
- 
+</center> 
+<script> 
+function displayDate(){ 
+  document.getElementById("showdate").innerHTML=Date(); 
+} 
 </script>
+</form>
 </body>
 </html>
+<?php
+$con=pg_connect("host=localhost dbname=login1 user=aesthetic password=aesthetic")
+if(isset($_POST['btn']))
+{
+ $no=$_POST['rno'];
+ $uname=$_POST['name']; 
+ $sub=$_POST['subjects'];
+ $qry=pg_query("select * from submit where Rollno='$no' Name='$uname' and Subject='$sub'");
+ $qry1=pg_fetch_row($qry);
+ if(!$qry1)
+ echo "you can't Submit the Attendance";
+ else
+ echo "Attendance Succesful";
+}
+?>
+
