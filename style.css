@@ -28,7 +28,7 @@ display:grid;
 justify-content:center;
 align-items:center;
 font-size:1.2rem;
-background-color:$clr-bg ;
+background-color:$Clr-bg ;
 }
 .form{
 position:relative;
