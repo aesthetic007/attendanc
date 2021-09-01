@@ -35,6 +35,10 @@ align-items:center;
 font-size:1.2rem;
 background-color:#060b23;
 }
+h2{
+font-family:"Convergence", sans-serif;
+color:white;
+}
 .form{
 position:relative;
 width:20rem;
@@ -98,6 +102,7 @@ background-color:#060b23;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
+  font-family:"Convergence", sans-serif;
   color:#fff ;
   background-color:#060b23;
   background-clip: padding-box;
@@ -141,10 +146,26 @@ background-color:#060b23;
   .input-group > .custom-file + .custom-file {
   margin-left: -1px;
   }
+  input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+  background-color: #45a049;
+  }
 </style>
 </head>
 <body onload="startTime()">
-<form>
+<form border="1">
+<font face="sans-serif" color="white"  size="1" align="left">DEPT-BCA</font>
+<center><h2>Attendance</h2></center> 
 <div class="form">
 <input type="text" id="rollno" class="form__input" autocomplete="off" placeholder=" ">
 <label for="rollno" class="form__label">Rollno</label>
@@ -155,6 +176,7 @@ background-color:#060b23;
 <label for="Name" class="form__label">Name</label>
 </div>
 <br>
+
 <div class="form-group">
 <label for="subject">Subjects</label>
 <select name="subject"  id="subject" class="form-control" name="subject">
@@ -195,4 +217,3 @@ background-color:#060b23;
        </script>
 </body>
 </html>
-
